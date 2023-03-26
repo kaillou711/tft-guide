@@ -25,7 +25,7 @@ h1{
 body{
     overflow-x: hidden;
     max-width: 1900px;
-    background: url(../img/background.png) no-repeat fixed center;
+    background: url(../img/Background.png) no-repeat fixed center;
     background-size: cover;
 }
 
