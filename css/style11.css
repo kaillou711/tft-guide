@@ -1,0 +1,935 @@
+/*--GENERAL--*/
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Poppins';
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: "Poppins";
+    color: white;
+    size: 15em;
+    display: flex;
+    justify-content: left;
+}
+
+body{
+    overflow-x: hidden;
+    max-width: 1920px;
+    background: url(../Series1/img/Background2.png) no-repeat fixed center;
+    background-size: cover;
+}
+
+/*--HEADER--*/
+
+header {
+    height: 120px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    position: absolute;
+}
+
+
+header .container {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+header .container ul {
+    display: flex;
+}
+
+header .container .onglet ul a {
+    font-size:  1.5em;
+    font-weight: 500;
+    margin: 0 30px;
+    color: white
+}
+
+header .container .onglet ul a:hover{
+    color: orange;
+    transition: color .3s;
+}
+
+@media (max-width: 1500px) {
+    header .container {
+        width: 100%;
+    }
+}
+
+/*--PAGE PRINCIPALE--*/
+
+.box2 {
+    width: 1300px;
+    height: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.box3 {
+    width: 1100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+:root{
+    --hauteur-menu: 60px;
+}
+* {
+    margin: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+nav {
+    width: 900px;
+    font-size: 18px;
+    top: 0;
+}
+
+nav > ul {
+    display: flex;
+    text-align: left;
+    height: var(--hauteur-menu);
+}
+
+nav ul {
+    list-style-type: none;
+}
+  
+nav > ul > li {
+    position: relative;
+    height: 100%;
+    padding-left: 10px;
+}
+
+nav > ul > li > a {
+    position: absolute;
+    top: 50%;
+}
+  
+li a {
+    text-decoration: none;
+    color: white;
+}
+  
+.menu-deroulant > a:after{
+    content: '❯';
+    font-size: 15px;
+    margin-left: 7px;
+    display: inline-block;
+}
+
+.sous-menu1 {
+    margin-top: var(--hauteur-menu);
+    width: 150px;
+    text-align: center;
+    background-color: rgb(48, 46, 46);
+    border-radius: px;
+    max-height: 0;
+    height: 100px;
+    overflow: hidden;
+}
+
+.sous-menu2 {
+    margin-top: var(--hauteur-menu);
+    width: 200px;
+    text-align: center;
+    background-color: rgb(48, 46, 46);
+    border-radius: px;
+    max-height: 0;
+    height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.sous-menu1 > li > a {
+    height: 50px;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.sous-menu2 > li > a {
+    height: 50px;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+nav > ul > li:hover > a{
+    color: white;
+}
+
+.sous-menu1 > li:hover {
+    background-color: orange;
+    opacity: 50%;
+}
+
+.sous-menu2 > li:hover {
+    background-color: orange;
+    opacity: 50%;
+}
+   
+.sous-menu1 > li:hover > a {
+    color: black;
+}
+
+.sous-menu2 > li:hover > a {
+    color: black;
+}
+
+@keyframes rotationFleche {
+    0% {
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(90deg);
+    }
+}
+
+.menu-deroulant:hover > a:after{
+    animation: rotationFleche 0.2s linear forwards;
+}
+
+@keyframes apparitionSousMenu {
+    0% {
+      border-top: 3px solid black;
+    }
+    100% {
+      max-height: 50em;
+      border-top: 3px solid black;
+    }
+}
+
+.menu-deroulant:hover > .sous-menu1 {
+  animation: apparitionSousMenu 1s forwards;
+}
+
+.menu-deroulant:hover > .sous-menu2 {
+    animation: apparitionSousMenu 1s forwards;
+}
+
+/*--Boutton--*/
+button {
+    width: 71.6px;
+    height: 71.6px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: flex;
+}
+
+/*--Dowsie--*/
+.box2 #image28_1_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image28_2_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image28_3_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image28_4_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image28_5_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image28_6_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image28_7_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image28_8_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image28_9_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image28_10_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image28_11_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image28_12_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.Dowsie_Base .niveaux1 {
+    margin-top:  250px;
+    margin-left: 103px;
+    position: absolute;
+}
+
+.Dowsie_Base .niveaux2 {
+    margin-top:  250px;
+    margin-left: 172px;
+    position: absolute;
+}
+
+.Dowsie_Base .niveaux3 {
+    margin-top:  250px;
+    margin-left: 243px;
+    position: absolute;
+}
+
+.Dowsie_Jelly .niveaux1 {
+    margin-top:  250px;
+    margin-left: 397px;
+    position: absolute;
+}
+
+.Dowsie_Jelly .niveaux2 {
+    margin-top:  250px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+.Dowsie_Jelly .niveaux3 {
+    margin-top:  250px;
+    margin-left: 537px;
+    position: absolute;
+}
+
+.Dowsie_Waffle .niveaux1 {
+    margin-top:  250px;
+    margin-left: 691px;
+    position: absolute;
+}
+
+.Dowsie_Waffle .niveaux2 {
+    margin-top:  250px;
+    margin-left: 762px;
+    position: absolute;
+}
+
+.Dowsie_Waffle .niveaux3 {
+    margin-top:  250px;
+    margin-left: 831px;
+    position: absolute;
+}
+
+.Dowsie_Iridescent .niveaux1 {
+    margin-top:  250px;
+    margin-left: 985px;
+    position: absolute;
+}
+
+.Dowsie_Iridescent .niveaux2 {
+    margin-top:  250px;
+    margin-left: 1056px;
+    position: absolute;
+}
+
+.Dowsie_Iridescent .niveaux3 {
+    margin-top:  250px;
+    margin-left: 1125px;
+    position: absolute;
+}
+
+.Dowsie_Nightbringer .niveaux1 {
+    margin-top:  545px;
+    margin-left: 103px;
+    position: absolute;
+}
+
+.Dowsie_Nightbringer .niveaux2 {
+    margin-top:  545px;
+    margin-left: 172px;
+    position: absolute;
+}
+
+.Dowsie_Nightbringer .niveaux3 {
+    margin-top:  545px;
+    margin-left: 243px;
+    position: absolute;
+}
+
+.Dowsie_Koi .niveaux1 {
+    margin-top:  545px;
+    margin-left: 397px;
+    position: absolute;
+}
+
+.Dowsie_Koi .niveaux2 {
+    margin-top:  545px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+.Dowsie_Koi .niveaux3 {
+    margin-top:  545px;
+    margin-left: 537px;
+    position: absolute;
+}
+
+.Dowsie_Urf .niveaux1 {
+    margin-top:  545px;
+    margin-left: 691px;
+    position: absolute;
+}
+
+.Dowsie_Urf .niveaux2 {
+    margin-top:  545px;
+    margin-left: 762px;
+    position: absolute;
+}
+
+.Dowsie_Urf .niveaux3 {
+    margin-top:  545px;
+    margin-left: 831px;
+    position: absolute;
+}
+
+.Dowsie_Sweet_Petal .niveaux1 {
+    margin-top:  545px;
+    margin-left: 985px;
+    position: absolute;
+}
+
+.Dowsie_Sweet_Petal .niveaux2 {
+    margin-top:  545px;
+    margin-left: 1056px;
+    position: absolute;
+}
+
+.Dowsie_Sweet_Petal .niveaux3 {
+    margin-top:  545px;
+    margin-left: 1125px;
+    position: absolute;
+}
+
+.Dowsie_Lucky_Noodle .niveaux1{
+    margin-top:  844px;
+    margin-left: 103px;
+    position: absolute;
+}
+
+.Dowsie_Lucky_Noodle .niveaux2{
+    margin-top:  844px;
+    margin-left: 172px;
+    position: absolute;
+}
+
+.Dowsie_Lucky_Noodle .niveaux3{
+    margin-top:  844px;
+    margin-left: 243px;
+    position: absolute;
+}
+
+.Dowsie_Fortune .niveaux1{
+    margin-top:  844px;
+    margin-left: 397px;
+    position: absolute;
+}
+
+.Dowsie_Fortune .niveaux2{
+    margin-top:  844px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+.Dowsie_Fortune .niveaux3{
+    margin-top:  844px;
+    margin-left: 537px;
+    position: absolute;
+}
+
+.Dowsie_Extra_Spicy .niveaux1{
+    margin-top:  844px;
+    margin-left: 691px;
+    position: absolute;
+}
+
+.Dowsie_Extra_Spicy .niveaux2{
+    margin-top:  844px;
+    margin-left: 762px;
+    position: absolute;
+}
+
+.Dowsie_Extra_Spicy .niveaux3{
+    margin-top:  844px;
+    margin-left: 831px;
+    position: absolute;
+}
+
+.Dowsie_Porcelain .niveaux1{
+    margin-top:  844px;
+    margin-left: 985px;
+    position: absolute;
+}
+
+.Dowsie_Porcelain .niveaux2{
+    margin-top:  844px;
+    margin-left: 1056px;
+    position: absolute;
+}
+
+.Dowsie_Porcelain .niveaux3{
+    margin-top:  844px;
+    margin-left: 1125px;
+    position: absolute;
+}
+
+/*--Fenroar--*/
+.box2 #image29_1_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image29_2_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image29_3_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image29_4_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image29_5_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image29_6_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image29_7_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image29_8_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image29_9_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image29_10_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image29_11_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.Fenroar_Base .niveaux1 {
+    margin-top:  250px;
+    margin-left: 103px;
+    position: absolute;
+}
+
+.Fenroar_Base .niveaux2 {
+    margin-top:  250px;
+    margin-left: 172px;
+    position: absolute;
+}
+
+.Fenroar_Base .niveaux3 {
+    margin-top:  250px;
+    margin-left: 243px;
+    position: absolute;
+}
+
+.Fenroar_Shurima .niveaux1 {
+    margin-top:  250px;
+    margin-left: 397px;
+    position: absolute;
+}
+
+.Fenroar_Shurima .niveaux2 {
+    margin-top:  250px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+.Fenroar_Shurima .niveaux3 {
+    margin-top:  250px;
+    margin-left: 537px;
+    position: absolute;
+}
+
+.Fenroar_Golden .niveaux1 {
+    margin-top:  250px;
+    margin-left: 691px;
+    position: absolute;
+}
+
+.Fenroar_Golden .niveaux2 {
+    margin-top:  250px;
+    margin-left: 762px;
+    position: absolute;
+}
+
+.Fenroar_Golden .niveaux3 {
+    margin-top:  250px;
+    margin-left: 831px;
+    position: absolute;
+}
+
+.Fenroar_Skyborn .niveaux1 {
+    margin-top:  250px;
+    margin-left: 985px;
+    position: absolute;
+}
+
+.Fenroar_Skyborn .niveaux2 {
+    margin-top:  250px;
+    margin-left: 1056px;
+    position: absolute;
+}
+
+.Fenroar_Skyborn .niveaux3 {
+    margin-top:  250px;
+    margin-left: 1125px;
+    position: absolute;
+}
+
+.Fenroar_Nightbringer .niveaux1 {
+    margin-top:  545px;
+    margin-left: 103px;
+    position: absolute;
+}
+
+.Fenroar_Nightbringer .niveaux2 {
+    margin-top:  545px;
+    margin-left: 172px;
+    position: absolute;
+}
+
+.Fenroar_Nightbringer .niveaux3 {
+    margin-top:  545px;
+    margin-left: 243px;
+    position: absolute;
+}
+
+.Fenroar_Kanmei .niveaux1 {
+    margin-top:  545px;
+    margin-left: 397px;
+    position: absolute;
+}
+
+.Fenroar_Kanmei .niveaux2 {
+    margin-top:  545px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+.Fenroar_Kanmei .niveaux3 {
+    margin-top:  545px;
+    margin-left: 537px;
+    position: absolute;
+}
+
+.Fenroar_Afterburner .niveaux1 {
+    margin-top:  545px;
+    margin-left: 691px;
+    position: absolute;
+}
+
+.Fenroar_Afterburner .niveaux2 {
+    margin-top:  545px;
+    margin-left: 762px;
+    position: absolute;
+}
+
+.Fenroar_Afterburner .niveaux3 {
+    margin-top:  545px;
+    margin-left: 831px;
+    position: absolute;
+}
+
+.Fenroar_Bounty_Hunter .niveaux1 {
+    margin-top:  545px;
+    margin-left: 985px;
+    position: absolute;
+}
+
+.Fenroar_Bounty_Hunter .niveaux2 {
+    margin-top:  545px;
+    margin-left: 1056px;
+    position: absolute;
+}
+
+.Fenroar_Bounty_Hunter .niveaux3 {
+    margin-top:  545px;
+    margin-left: 1125px;
+    position: absolute;
+}
+
+.Fenroar_Hextech .niveaux1{
+    margin-top:  844px;
+    margin-left: 250px;
+    position: absolute;
+}
+
+.Fenroar_Hextech .niveaux2{
+    margin-top:  844px;
+    margin-left: 320px;
+    position: absolute;
+}
+
+.Fenroar_Hextech .niveaux3{
+    margin-top:  844px;
+    margin-left: 390px;
+    position: absolute;
+}
+
+.Fenroar_Pulsefire .niveaux1{
+    margin-top:  844px;
+    margin-left: 544px;
+    position: absolute;
+}
+
+.Fenroar_Pulsefire .niveaux2{
+    margin-top:  844px;
+    margin-left: 615px;
+    position: absolute;
+}
+
+.Fenroar_Pulsefire .niveaux3{
+    margin-top:  844px;
+    margin-left: 684px;
+    position: absolute;
+}
+
+.Fenroar_Sodapop .niveaux1{
+    margin-top:  844px;
+    margin-left: 838px;
+    position: absolute;
+}
+
+.Fenroar_Sodapop .niveaux2{
+    margin-top:  844px;
+    margin-left: 908px;
+    position: absolute;
+}
+
+.Fenroar_Sodapop .niveaux3{
+    margin-top:  844px;
+    margin-left: 978px;
+    position: absolute;
+}
+
+/*--Nimblefoot--*/
+.box2 #image30_1_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image30_2_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image30_3_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image30_4_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image30_5_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image30_6_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.Nimblefoot_Base .niveaux1 {
+    margin-top:  250px;
+    margin-left: 103px;
+    position: absolute;
+}
+
+.Nimblefoot_Base .niveaux2 {
+    margin-top:  250px;
+    margin-left: 172px;
+    position: absolute;
+}
+
+.Nimblefoot_Base .niveaux3 {
+    margin-top:  250px;
+    margin-left: 243px;
+    position: absolute;
+}
+
+.Nimblefoot_Kinkou .niveaux1 {
+    margin-top:  250px;
+    margin-left: 397px;
+    position: absolute;
+}
+
+.Nimblefoot_Kinkou .niveaux2 {
+    margin-top:  250px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+.Nimblefoot_Kinkou .niveaux3 {
+    margin-top:  250px;
+    margin-left: 537px;
+    position: absolute;
+}
+
+.Nimblefoot_Verdant .niveaux1 {
+    margin-top:  250px;
+    margin-left: 691px;
+    position: absolute;
+}
+
+.Nimblefoot_Verdant .niveaux2 {
+    margin-top:  250px;
+    margin-left: 762px;
+    position: absolute;
+}
+
+.Nimblefoot_Verdant .niveaux3 {
+    margin-top:  250px;
+    margin-left: 831px;
+    position: absolute;
+}
+
+.Nimblefoot_Nightbringer .niveaux1 {
+    margin-top:  250px;
+    margin-left: 985px;
+    position: absolute;
+}
+
+.Nimblefoot_Nightbringer .niveaux2 {
+    margin-top:  250px;
+    margin-left: 1056px;
+    position: absolute;
+}
+
+.Nimblefoot_Nightbringer .niveaux3 {
+    margin-top:  250px;
+    margin-left: 1125px;
+    position: absolute;
+}
+
+.Nimblefoot_Redeemed .niveaux1 {
+    margin-top:  545px;
+    margin-left: 397px;
+    position: absolute;
+}
+
+.Nimblefoot_Redeemed .niveaux2 {
+    margin-top:  545px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+.Nimblefoot_Redeemed .niveaux3 {
+    margin-top:  545px;
+    margin-left: 537px;
+    position: absolute;
+}
+
+.Nimblefoot_Forgotten .niveaux1 {
+    margin-top:  545px;
+    margin-left: 691px;
+    position: absolute;
+}
+
+.Nimblefoot_Forgotten .niveaux2 {
+    margin-top:  545px;
+    margin-left: 762px;
+    position: absolute;
+}
+
+.Nimblefoot_Forgotten .niveaux3 {
+    margin-top:  545px;
+    margin-left: 831px;
+    position: absolute;
+}

@@ -1,0 +1,899 @@
+/*--GENERAL--*/
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Poppins';
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: "Poppins";
+    color: white;
+    size: 15em;
+    display: flex;
+    justify-content: left;
+}
+
+body{
+    overflow-x: hidden;
+    max-width: 1920px;
+    background: url(../Series1/img/Background2.png) no-repeat fixed center;
+    background-size: cover;
+}
+
+/*--HEADER--*/
+
+header {
+    height: 120px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    position: absolute;
+}
+
+
+header .container {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+header .container ul {
+    display: flex;
+}
+
+header .container .onglet ul a {
+    font-size:  1.5em;
+    font-weight: 500;
+    margin: 0 30px;
+    color: white
+}
+
+header .container .onglet ul a:hover{
+    color: orange;
+    transition: color .3s;
+}
+
+@media (max-width: 1500px) {
+    header .container {
+        width: 100%;
+    }
+}
+
+/*--PAGE PRINCIPALE--*/
+
+.box2 {
+    width: 1300px;
+    height: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.box3 {
+    width: 1100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+:root{
+    --hauteur-menu: 60px;
+}
+* {
+    margin: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+nav {
+    width: 900px;
+    font-size: 18px;
+    top: 0;
+}
+
+nav > ul {
+    display: flex;
+    text-align: left;
+    height: var(--hauteur-menu);
+}
+
+nav ul {
+    list-style-type: none;
+}
+  
+nav > ul > li {
+    position: relative;
+    height: 100%;
+    padding-left: 10px;
+}
+
+nav > ul > li > a {
+    position: absolute;
+    top: 50%;
+}
+  
+li a {
+    text-decoration: none;
+    color: white;
+}
+  
+.menu-deroulant > a:after{
+    content: '❯';
+    font-size: 15px;
+    margin-left: 7px;
+    display: inline-block;
+}
+
+.sous-menu1 {
+    margin-top: var(--hauteur-menu);
+    width: 150px;
+    text-align: center;
+    background-color: rgb(48, 46, 46);
+    border-radius: px;
+    max-height: 0;
+    height: 100px;
+    overflow: hidden;
+}
+
+.sous-menu2 {
+    margin-top: var(--hauteur-menu);
+    width: 200px;
+    text-align: center;
+    background-color: rgb(48, 46, 46);
+    border-radius: px;
+    max-height: 0;
+    height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.sous-menu1 > li > a {
+    height: 50px;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.sous-menu2 > li > a {
+    height: 50px;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+nav > ul > li:hover > a{
+    color: white;
+}
+
+.sous-menu1 > li:hover {
+    background-color: orange;
+    opacity: 50%;
+}
+
+.sous-menu2 > li:hover {
+    background-color: orange;
+    opacity: 50%;
+}
+   
+.sous-menu1 > li:hover > a {
+    color: black;
+}
+
+.sous-menu2 > li:hover > a {
+    color: black;
+}
+
+@keyframes rotationFleche {
+    0% {
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(90deg);
+    }
+}
+
+.menu-deroulant:hover > a:after{
+    animation: rotationFleche 0.2s linear forwards;
+}
+
+@keyframes apparitionSousMenu {
+    0% {
+      border-top: 3px solid black;
+    }
+    100% {
+      max-height: 50em;
+      border-top: 3px solid black;
+    }
+}
+
+.menu-deroulant:hover > .sous-menu1 {
+  animation: apparitionSousMenu 1s forwards;
+}
+
+.menu-deroulant:hover > .sous-menu2 {
+    animation: apparitionSousMenu 1s forwards;
+}
+
+/*--Boutton--*/
+button {
+    width: 71.6px;
+    height: 71.6px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: flex;
+}
+
+/*--Bellswayer--*/
+.box2 #image22_1_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image22_2_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image22_3_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image22_4_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image22_5_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image22_6_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image22_7_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.Bellswayer_Base .niveaux1 {
+    margin-top:  250px;
+    margin-left: 103px;
+    position: absolute;
+}
+
+.Bellswayer_Base .niveaux2 {
+    margin-top:  250px;
+    margin-left: 172px;
+    position: absolute;
+}
+
+.Bellswayer_Base .niveaux3 {
+    margin-top:  250px;
+    margin-left: 243px;
+    position: absolute;
+}
+
+.Bellswayer_Sugar_Rush .niveaux1 {
+    margin-top:  250px;
+    margin-left: 397px;
+    position: absolute;
+}
+
+.Bellswayer_Sugar_Rush .niveaux2 {
+    margin-top:  250px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+.Bellswayer_Sugar_Rush .niveaux3 {
+    margin-top:  250px;
+    margin-left: 537px;
+    position: absolute;
+}
+
+.Bellswayer_Thunderstorm .niveaux1 {
+    margin-top:  250px;
+    margin-left: 691px;
+    position: absolute;
+}
+
+.Bellswayer_Thunderstorm .niveaux2 {
+    margin-top:  250px;
+    margin-left: 762px;
+    position: absolute;
+}
+
+.Bellswayer_Thunderstorm .niveaux3 {
+    margin-top:  250px;
+    margin-left: 831px;
+    position: absolute;
+}
+
+.Bellswayer_Black_Mist .niveaux1 {
+    margin-top:  250px;
+    margin-left: 985px;
+    position: absolute;
+}
+
+.Bellswayer_Black_Mist .niveaux2 {
+    margin-top:  250px;
+    margin-left: 1056px;
+    position: absolute;
+}
+
+.Bellswayer_Black_Mist .niveaux3 {
+    margin-top:  250px;
+    margin-left: 1125px;
+    position: absolute;
+}
+
+.Bellswayer_Yuletide .niveaux1 {
+    margin-top:  545px;
+    margin-left: 250px;
+    position: absolute;
+}
+
+.Bellswayer_Yuletide .niveaux2 {
+    margin-top:  545px;
+    margin-left: 321px;
+    position: absolute;
+}
+
+.Bellswayer_Yuletide .niveaux3 {
+    margin-top:  545px;
+    margin-left: 390px;
+    position: absolute;
+}
+
+.Bellswayer_Blood_Moon .niveaux1 {
+    margin-top:  545px;
+    margin-left: 544px;
+    position: absolute;
+}
+
+.Bellswayer_Blood_Moon .niveaux2 {
+    margin-top:  545px;
+    margin-left: 614px;
+    position: absolute;
+}
+
+.Bellswayer_Blood_Moon .niveaux3 {
+    margin-top:  545px;
+    margin-left: 684px;
+    position: absolute;
+}
+
+.Bellswayer_Porcelain .niveaux1 {
+    margin-top:  545px;
+    margin-left: 838px;
+    position: absolute;
+}
+
+.Bellswayer_Porcelain .niveaux2 {
+    margin-top:  545px;
+    margin-left: 908px;
+    position: absolute;
+}
+
+.Bellswayer_Porcelain .niveaux3 {
+    margin-top:  545px;
+    margin-left: 978px;
+    position: absolute;
+}
+
+/*--Lightcharger--*/
+.box2 #image23_1_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image23_2_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image23_3_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image23_4_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image23_5_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image23_6_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image23_7_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image23_8_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image23_9_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image23_10_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image23_11_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image23_12_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image23_13_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.Lightcharger_Base .niveaux1 {
+    margin-top:  250px;
+    margin-left: 103px;
+    position: absolute;
+}
+
+.Lightcharger_Base .niveaux2 {
+    margin-top:  250px;
+    margin-left: 172px;
+    position: absolute;
+}
+
+.Lightcharger_Base .niveaux3 {
+    margin-top:  250px;
+    margin-left: 243px;
+    position: absolute;
+}
+
+.Lightcharger_Crystal .niveaux1 {
+    margin-top:  250px;
+    margin-left: 397px;
+    position: absolute;
+}
+
+.Lightcharger_Crystal .niveaux2 {
+    margin-top:  250px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+.Lightcharger_Crystal .niveaux3 {
+    margin-top:  250px;
+    margin-left: 537px;
+    position: absolute;
+}
+
+.Lightcharger_Sugarcone .niveaux1 {
+    margin-top:  250px;
+    margin-left: 691px;
+    position: absolute;
+}
+
+.Lightcharger_Sugarcone .niveaux2 {
+    margin-top:  250px;
+    margin-left: 762px;
+    position: absolute;
+}
+
+.Lightcharger_Sugarcone .niveaux3 {
+    margin-top:  250px;
+    margin-left: 831px;
+    position: absolute;
+}
+
+.Lightcharger_Black_Mist .niveaux1 {
+    margin-top:  250px;
+    margin-left: 985px;
+    position: absolute;
+}
+
+.Lightcharger_Black_Mist .niveaux2 {
+    margin-top:  250px;
+    margin-left: 1056px;
+    position: absolute;
+}
+
+.Lightcharger_Black_Mist .niveaux3 {
+    margin-top:  250px;
+    margin-left: 1125px;
+    position: absolute;
+}
+
+.Lightcharger_High_Noon .niveaux1 {
+    margin-top:  545px;
+    margin-left: 103px;
+    position: absolute;
+}
+
+.Lightcharger_High_Noon .niveaux2 {
+    margin-top:  545px;
+    margin-left: 172px;
+    position: absolute;
+}
+
+.Lightcharger_High_Noon .niveaux3 {
+    margin-top:  545px;
+    margin-left: 243px;
+    position: absolute;
+}
+
+.Lightcharger_Arcade .niveaux1 {
+    margin-top:  545px;
+    margin-left: 397px;
+    position: absolute;
+}
+
+.Lightcharger_Arcade .niveaux2 {
+    margin-top:  545px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+.Lightcharger_Arcade .niveaux3 {
+    margin-top:  545px;
+    margin-left: 537px;
+    position: absolute;
+}
+
+.Lightcharger_KDA_ALL_OUT .niveaux1 {
+    margin-top:  545px;
+    margin-left: 691px;
+    position: absolute;
+}
+
+.Lightcharger_KDA_ALL_OUT .niveaux2 {
+    margin-top:  545px;
+    margin-left: 762px;
+    position: absolute;
+}
+
+.Lightcharger_KDA_ALL_OUT .niveaux3 {
+    margin-top:  545px;
+    margin-left: 831px;
+    position: absolute;
+}
+
+.Lightcharger_KDA_POPSTARS .niveaux1 {
+    margin-top:  545px;
+    margin-left: 985px;
+    position: absolute;
+}
+
+.Lightcharger_KDA_POPSTARS .niveaux2 {
+    margin-top:  545px;
+    margin-left: 1056px;
+    position: absolute;
+}
+
+.Lightcharger_KDA_POPSTARS .niveaux3 {
+    margin-top:  545px;
+    margin-left: 1125px;
+    position: absolute;
+}
+
+.Lightcharger_Bubblegum_Racer .niveaux1{
+    margin-top:  844px;
+    margin-left: 103px;
+    position: absolute;
+}
+
+.Lightcharger_Bubblegum_Racer .niveaux2{
+    margin-top:  844px;
+    margin-left: 172px;
+    position: absolute;
+}
+
+.Lightcharger_Bubblegum_Racer .niveaux3{
+    margin-top:  844px;
+    margin-left: 243px;
+    position: absolute;
+}
+
+.Lightcharger_Groovy .niveaux1{
+    margin-top:  844px;
+    margin-left: 397px;
+    position: absolute;
+}
+
+.Lightcharger_Groovy .niveaux2{
+    margin-top:  844px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+.Lightcharger_Groovy .niveaux3{
+    margin-top:  844px;
+    margin-left: 537px;
+    position: absolute;
+}
+
+.Lightcharger_Hextech .niveaux1{
+    margin-top:  844px;
+    margin-left: 691px;
+    position: absolute;
+}
+
+.Lightcharger_Hextech .niveaux2{
+    margin-top:  844px;
+    margin-left: 762px;
+    position: absolute;
+}
+
+.Lightcharger_Hextech .niveaux3{
+    margin-top:  844px;
+    margin-left: 831px;
+    position: absolute;
+}
+
+.Lightcharger_Hot_Rod .niveaux1{
+    margin-top:  844px;
+    margin-left: 985px;
+    position: absolute;
+}
+
+.Lightcharger_Hot_Rod .niveaux2{
+    margin-top:  844px;
+    margin-left: 1056px;
+    position: absolute;
+}
+
+.Lightcharger_Hot_Rod .niveaux3{
+    margin-top:  844px;
+    margin-left: 1125px;
+    position: absolute;
+}
+
+.Lightcharger_Pulsefire .niveaux1{
+    margin-top:  1141px;
+    margin-left: 544px;
+    position: absolute;
+}
+
+.Lightcharger_Pulsefire .niveaux2{
+    margin-top:  1141px;
+    margin-left: 615px;
+    position: absolute;
+}
+
+.Lightcharger_Pulsefire .niveaux3{
+    margin-top:  1141px;
+    margin-left: 685px;
+    position: absolute;
+}
+
+/*--Nxie--*/
+.box2 #image24_1_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image24_2_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image24_3_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image24_4_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image24_5_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image24_6_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image24_7_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image24_8_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image24_9_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.Nixie_Base .niveaux1 {
+    margin-top:  250px;
+    margin-left: 103px;
+    position: absolute;
+}
+
+.Nixie_Base .niveaux2 {
+    margin-top:  250px;
+    margin-left: 172px;
+    position: absolute;
+}
+
+.Nixie_Base .niveaux3 {
+    margin-top:  250px;
+    margin-left: 243px;
+    position: absolute;
+}
+
+.Nixie_Mermaid .niveaux1 {
+    margin-top:  250px;
+    margin-left: 397px;
+    position: absolute;
+}
+
+.Nixie_Mermaid .niveaux2 {
+    margin-top:  250px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+.Nixie_Mermaid .niveaux3 {
+    margin-top:  250px;
+    margin-left: 537px;
+    position: absolute;
+}
+
+.Nixie_Rosebloom .niveaux1 {
+    margin-top:  250px;
+    margin-left: 691px;
+    position: absolute;
+}
+
+.Nixie_Rosebloom .niveaux2 {
+    margin-top:  250px;
+    margin-left: 762px;
+    position: absolute;
+}
+
+.Nixie_Rosebloom .niveaux3 {
+    margin-top:  250px;
+    margin-left: 831px;
+    position: absolute;
+}
+
+.Nixie_Extra_Spicy .niveaux1 {
+    margin-top:  250px;
+    margin-left: 985px;
+    position: absolute;
+}
+
+.Nixie_Extra_Spicy .niveaux2 {
+    margin-top:  250px;
+    margin-left: 1056px;
+    position: absolute;
+}
+
+.Nixie_Extra_Spicy .niveaux3 {
+    margin-top:  250px;
+    margin-left: 1125px;
+    position: absolute;
+}
+
+.Nixie_Vampire .niveaux1 {
+    margin-top:  545px;
+    margin-left: 103px;
+    position: absolute;
+}
+
+.Nixie_Vampire .niveaux2 {
+    margin-top:  545px;
+    margin-left: 172px;
+    position: absolute;
+}
+
+.Nixie_Vampire .niveaux3 {
+    margin-top:  545px;
+    margin-left: 243px;
+    position: absolute;
+}
+
+.Nixie_Neexie .niveaux1 {
+    margin-top:  545px;
+    margin-left: 397px;
+    position: absolute;
+}
+
+.Nixie_Neexie .niveaux2 {
+    margin-top:  545px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+.Nixie_Neexie .niveaux3 {
+    margin-top:  545px;
+    margin-left: 537px;
+    position: absolute;
+}
+
+.Nixie_Socialite .niveaux1 {
+    margin-top:  545px;
+    margin-left: 691px;
+    position: absolute;
+}
+
+.Nixie_Socialite .niveaux2 {
+    margin-top:  545px;
+    margin-left: 762px;
+    position: absolute;
+}
+
+.Nixie_Socialite .niveaux3 {
+    margin-top:  545px;
+    margin-left: 831px;
+    position: absolute;
+}

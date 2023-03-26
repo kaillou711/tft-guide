@@ -1,0 +1,86 @@
+/*--GENERAL--*/
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Poppins';
+    text-decoration: none;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+h1{
+    font-family: "Poppins";
+    color: white;
+    size: 15em;
+    display: flex;
+    justify-content: left;
+}
+
+body{
+    overflow-x: hidden;
+    max-width: 1920px;
+    background: url(../img/Background_Règles.png) no-repeat fixed center;
+    background-size: cover;
+}
+
+/*--HEADER--*/
+
+header {
+    height: 120px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    position: absolute;
+}
+
+
+header .container {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+header .container ul {
+    display: flex;
+}
+
+header .container .onglet ul a {
+    font-size:  1.5em;
+    font-weight: 500;
+    margin: 0 30px;
+    color: white
+}
+
+header .container .onglet ul a:hover{
+    color: orange;
+    transition: color .3s;
+}
+
+@media (max-width: 1500px) {
+    header .container {
+        width: 100%;
+    }
+}
+
+/*--PAGE PRINCIPALE--*/
+
+.box {
+    width: 1300px;
+    height: 3650px;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+p {
+    color: white;
+    font-size: 1.3em;
+    text-align: left;
+}

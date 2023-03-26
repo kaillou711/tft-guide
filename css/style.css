@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "VALORANT"; 
+    src: url("/font/Valorant.ttf") format("truetype"); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Poppins';
+    text-decoration: none;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+h1{
+    font-family: "VALORANT";
+    color: black;
+    size: 15em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+body{
+    overflow-x: hidden;
+    max-width: 1900px;
+    background: url(../img/background.png) no-repeat fixed center;
+    background-size: cover;
+}
+
+/*--HEADER--*/
+
+.main{
+    min-height: 100vh;
+}
+
+header {
+    height: 120px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    position: absolute;
+}
+
+
+header .container {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+header .container ul {
+    display: flex;
+}
+
+header .container .onglet ul a {
+    font-size:  1.5em;
+    font-weight: 500;
+    margin: 0 30px;
+    color: white
+}
+
+header .container .onglet ul a:hover{
+    color: orange;
+    transition: color .3s;
+}
+
+@media (max-width: 1500px) {
+    header .container {
+        width: 100%;
+    }
+}
+
+/*--PAGE PRINCIPALE--*/
+
+@media screen {
+    body{
+        width: 100%;
+    }
+}
+
+.box {
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.box2 {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.box2 a {
+    margin: 0 30px;
+}
+
+.pagepp .PetiteLg1 {
+    position: absolute;
+    top: 480px;
+    left: 0px;
+}
+
+.pagepp .PetiteLg2 {
+    position: absolute;
+    top: 400px;
+    right: -100px;
+}
+
+@media (max-width: 1500px) {
+    .pagepp .PetiteLg1{
+        display: none;
+        
+    }
+    .pagepp .PetiteLg2{
+        display: none;
+    }
+}

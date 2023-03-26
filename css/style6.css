@@ -1,0 +1,870 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Poppins';
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: "Poppins";
+    color: white;
+    size: 15em;
+    display: flex;
+    justify-content: left;
+}
+
+body{
+    overflow-x: hidden;
+    max-width: 1920px;
+    background: url(../Series1/img/Background2.png) no-repeat fixed center;
+    background-size: cover;
+}
+
+/*--HEADER--*/
+
+header {
+    height: 120px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    position: absolute;
+}
+
+
+header .container {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+header .container ul {
+    display: flex;
+}
+
+header .container .onglet ul a {
+    font-size:  1.5em;
+    font-weight: 500;
+    margin: 0 30px;
+    color: white
+}
+
+header .container .onglet ul a:hover{
+    color: orange;
+    transition: color .3s;
+}
+
+@media (max-width: 1500px) {
+    header .container {
+        width: 100%;
+    }
+}
+
+/*--PAGE PRINCIPALE--*/
+
+.box2 {
+    width: 1300px;
+    height: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.box3 {
+    width: 1100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+:root{
+    --hauteur-menu: 60px;
+}
+* {
+    margin: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+nav {
+    width: 900px;
+    font-size: 18px;
+    top: 0;
+}
+
+nav > ul {
+    display: flex;
+    text-align: left;
+    height: var(--hauteur-menu);
+}
+
+nav ul {
+    list-style-type: none;
+}
+  
+nav > ul > li {
+    position: relative;
+    height: 100%;
+    padding-left: 10px;
+}
+
+nav > ul > li > a {
+    position: absolute;
+    top: 50%;
+}
+  
+li a {
+    text-decoration: none;
+    color: white;
+}
+  
+.menu-deroulant > a:after{
+    content: '❯';
+    font-size: 15px;
+    margin-left: 7px;
+    display: inline-block;
+}
+
+.sous-menu1 {
+    margin-top: var(--hauteur-menu);
+    width: 150px;
+    text-align: center;
+    background-color: rgb(48, 46, 46);
+    border-radius: px;
+    max-height: 0;
+    height: 100px;
+    overflow: hidden;
+}
+
+.sous-menu2 {
+    margin-top: var(--hauteur-menu);
+    width: 200px;
+    text-align: center;
+    background-color: rgb(48, 46, 46);
+    border-radius: px;
+    max-height: 0;
+    height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.sous-menu1 > li > a {
+    height: 50px;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.sous-menu2 > li > a {
+    height: 50px;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+nav > ul > li:hover > a{
+    color: white;
+}
+
+.sous-menu1 > li:hover {
+    background-color: orange;
+    opacity: 50%;
+}
+
+.sous-menu2 > li:hover {
+    background-color: orange;
+    opacity: 50%;
+}
+   
+.sous-menu1 > li:hover > a {
+    color: black;
+}
+
+.sous-menu2 > li:hover > a {
+    color: black;
+}
+
+@keyframes rotationFleche {
+    0% {
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(90deg);
+    }
+}
+
+.menu-deroulant:hover > a:after{
+    animation: rotationFleche 0.2s linear forwards;
+}
+
+@keyframes apparitionSousMenu {
+    0% {
+      border-top: 3px solid black;
+    }
+    100% {
+      max-height: 50em;
+      border-top: 3px solid black;
+    }
+}
+
+.menu-deroulant:hover > .sous-menu1 {
+  animation: apparitionSousMenu 1s forwards;
+}
+
+.menu-deroulant:hover > .sous-menu2 {
+    animation: apparitionSousMenu 1s forwards;
+}
+
+/*--Boutton--*/
+button {
+    width: 71.6px;
+    height: 71.6px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: flex;
+}
+
+/*--Melisma--*/
+.box2 #image13_1_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image13_2_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image13_3_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image13_4_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image13_5_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image13_6_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image13_7_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image13_8_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.Melisma_Base .niveaux1 {
+    margin-top:  250px;
+    margin-left: 103px;
+    position: absolute;
+}
+
+.Melisma_Base .niveaux2 {
+    margin-top:  250px;
+    margin-left: 172px;
+    position: absolute;
+}
+
+.Melisma_Base .niveaux3 {
+    margin-top:  250px;
+    margin-left: 243px;
+    position: absolute;
+}
+
+.Melisma_Hardhitter .niveaux1 {
+    margin-top:  250px;
+    margin-left: 397px;
+    position: absolute;
+}
+
+.Melisma_Hardhitter .niveaux2 {
+    margin-top:  250px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+.Melisma_Hardhitter .niveaux3 {
+    margin-top:  250px;
+    margin-left: 537px;
+    position: absolute;
+}
+
+.Melisma_Pop_Queen .niveaux1 {
+    margin-top:  250px;
+    margin-left: 691px;
+    position: absolute;
+}
+
+.Melisma_Pop_Queen .niveaux2 {
+    margin-top:  250px;
+    margin-left: 762px;
+    position: absolute;
+}
+
+.Melisma_Pop_Queen .niveaux3 {
+    margin-top:  250px;
+    margin-left: 831px;
+    position: absolute;
+}
+
+.Melisma_Beatmaker .niveaux1 {
+    margin-top:  250px;
+    margin-left: 985px;
+    position: absolute;
+}
+
+.Melisma_Beatmaker .niveaux2 {
+    margin-top:  250px;
+    margin-left: 1056px;
+    position: absolute;
+}
+
+.Melisma_Beatmaker .niveaux3 {
+    margin-top:  250px;
+    margin-left: 1125px;
+    position: absolute;
+}
+
+.Melisma_Prodigy .niveaux1 {
+    margin-top:  545px;
+    margin-left: 103px;
+    position: absolute;
+}
+
+.Melisma_Prodigy .niveaux2 {
+    margin-top:  545px;
+    margin-left: 172px;
+    position: absolute;
+}
+
+.Melisma_Prodigy .niveaux3 {
+    margin-top:  545px;
+    margin-left: 243px;
+    position: absolute;
+}
+
+.Melisma_Shadow_Beat .niveaux1 {
+    margin-top:  545px;
+    margin-left: 397px;
+    position: absolute;
+}
+
+.Melisma_Shadow_Beat .niveaux2 {
+    margin-top:  545px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+.Melisma_Shadow_Beat .niveaux3 {
+    margin-top:  545px;
+    margin-left: 537px;
+    position: absolute;
+}
+
+.Melisma_Spirit_Blossom_Kami .niveaux1 {
+    margin-top:  545px;
+    margin-left: 691px;
+    position: absolute;
+}
+
+.Melisma_Spirit_Blossom_Kami .niveaux2 {
+    margin-top:  545px;
+    margin-left: 762px;
+    position: absolute;
+}
+
+.Melisma_Spirit_Blossom_Kami .niveaux3 {
+    margin-top:  545px;
+    margin-left: 831px;
+    position: absolute;
+}
+
+.Melisma_Spirit_Blossom_Yokai .niveaux1 {
+    margin-top:  545px;
+    margin-left: 985px;
+    position: absolute;
+}
+
+.Melisma_Spirit_Blossom_Yokai .niveaux2 {
+    margin-top:  545px;
+    margin-left: 1056px;
+    position: absolute;
+}
+
+.Melisma_Spirit_Blossom_Yokai .niveaux3 {
+    margin-top:  545px;
+    margin-left: 1125px;
+    position: absolute;
+}
+
+/*--Ossia--*/
+.box2 #image14_1_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image14_2_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image14_3_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image14_4_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image14_5_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image14_6_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image14_7_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+/*--Boutton--*/
+button {
+    width: 71.6px;
+    height: 71.6px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: flex;
+}
+
+.Ossia_Base .niveaux1 {
+    margin-top:  250px;
+    margin-left: 103px;
+    position: absolute;
+}
+
+.Ossia_Base .niveaux2 {
+    margin-top:  250px;
+    margin-left: 172px;
+    position: absolute;
+}
+
+.Ossia_Base .niveaux3 {
+    margin-top:  250px;
+    margin-left: 243px;
+    position: absolute;
+}
+
+.Ossia_Pop_Queen .niveaux1 {
+    margin-top:  250px;
+    margin-left: 397px;
+    position: absolute;
+}
+
+.Ossia_Pop_Queen .niveaux2 {
+    margin-top:  250px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+.Ossia_Pop_Queen .niveaux3 {
+    margin-top:  250px;
+    margin-left: 537px;
+    position: absolute;
+}
+
+.Ossia_Soloist .niveaux1 {
+    margin-top:  250px;
+    margin-left: 691px;
+    position: absolute;
+}
+
+.Ossia_Soloist .niveaux2 {
+    margin-top:  250px;
+    margin-left: 762px;
+    position: absolute;
+}
+
+.Ossia_Soloist .niveaux3 {
+    margin-top:  250px;
+    margin-left: 831px;
+    position: absolute;
+}
+
+.Ossia_Beatmaker .niveaux1 {
+    margin-top:  250px;
+    margin-left: 985px;
+    position: absolute;
+}
+
+.Ossia_Beatmaker .niveaux2 {
+    margin-top:  250px;
+    margin-left: 1056px;
+    position: absolute;
+}
+
+.Ossia_Beatmaker .niveaux3 {
+    margin-top:  250px;
+    margin-left: 1125px;
+    position: absolute;
+}
+
+.Ossia_Prodigy .niveaux1 {
+    margin-top:  545px;
+    margin-left: 250px;
+    position: absolute;
+}
+
+.Ossia_Prodigy .niveaux2 {
+    margin-top:  545px;
+    margin-left: 321px;
+    position: absolute;
+}
+
+.Ossia_Prodigy .niveaux3 {
+    margin-top:  545px;
+    margin-left: 390px;
+    position: absolute;
+}
+
+.Ossia_Pumped_Up .niveaux1 {
+    margin-top:  545px;
+    margin-left: 544px;
+    position: absolute;
+}
+
+.Ossia_Pumped_Up .niveaux2 {
+    margin-top:  545px;
+    margin-left: 614px;
+    position: absolute;
+}
+
+.Ossia_Pumped_Up .niveaux3 {
+    margin-top:  545px;
+    margin-left: 684px;
+    position: absolute;
+}
+
+.Ossia_Dragon_Dancer .niveaux1 {
+    margin-top:  545px;
+    margin-left: 838px;
+    position: absolute;
+}
+
+.Ossia_Dragon_Dancer .niveaux2 {
+    margin-top:  545px;
+    margin-left: 908px;
+    position: absolute;
+}
+
+.Ossia_Dragon_Dancer .niveaux3 {
+    margin-top:  545px;
+    margin-left: 978px;
+    position: absolute;
+}
+
+/*--QiQi--*/
+.box2 #image15_1_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image15_2_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image15_3_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image15_4_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image15_5_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image15_6_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image15_7_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image15_8_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+.box2 #image15_9_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image15_10_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.box2 #image15_11_1 {
+    margin: 40px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.QiQi_Base .niveaux1 {
+    margin-top:  250px;
+    margin-left: 103px;
+    position: absolute;
+}
+
+.QiQi_Base .niveaux2 {
+    margin-top:  250px;
+    margin-left: 172px;
+    position: absolute;
+}
+
+.QiQi_Base .niveaux3 {
+    margin-top:  250px;
+    margin-left: 243px;
+    position: absolute;
+}
+
+.QiQi_Hardhitter .niveaux1 {
+    margin-top:  250px;
+    margin-left: 397px;
+    position: absolute;
+}
+
+.QiQi_Hardhitter .niveaux2 {
+    margin-top:  250px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+.QiQi_Hardhitter .niveaux3 {
+    margin-top:  250px;
+    margin-left: 537px;
+    position: absolute;
+}
+
+.QiQi_Soloist .niveaux1 {
+    margin-top:  250px;
+    margin-left: 691px;
+    position: absolute;
+}
+
+.QiQi_Soloist .niveaux2 {
+    margin-top:  250px;
+    margin-left: 762px;
+    position: absolute;
+}
+
+.QiQi_Soloist .niveaux3 {
+    margin-top:  250px;
+    margin-left: 831px;
+    position: absolute;
+}
+
+.QiQi_Beatmaker .niveaux1 {
+    margin-top:  250px;
+    margin-left: 985px;
+    position: absolute;
+}
+
+.QiQi_Beatmaker .niveaux2 {
+    margin-top:  250px;
+    margin-left: 1056px;
+    position: absolute;
+}
+
+.QiQi_Beatmaker .niveaux3 {
+    margin-top:  250px;
+    margin-left: 1125px;
+    position: absolute;
+}
+
+.QiQi_Prodigy .niveaux1 {
+    margin-top:  545px;
+    margin-left: 103px;
+    position: absolute;
+}
+
+.QiQi_Prodigy .niveaux2 {
+    margin-top:  545px;
+    margin-left: 172px;
+    position: absolute;
+}
+
+.QiQi_Prodigy .niveaux3 {
+    margin-top:  545px;
+    margin-left: 243px;
+    position: absolute;
+}
+
+.QiQi_Bass_Queen .niveaux1 {
+    margin-top:  545px;
+    margin-left: 397px;
+    position: absolute;
+}
+
+.QiQi_Bass_Queen .niveaux2 {
+    margin-top:  545px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+.QiQi_Bass_Queen .niveaux3 {
+    margin-top:  545px;
+    margin-left: 537px;
+    position: absolute;
+}
+
+.QiQi_Arcade .niveaux1 {
+    margin-top:  545px;
+    margin-left: 691px;
+    position: absolute;
+}
+
+.QiQi_Arcade .niveaux2 {
+    margin-top:  545px;
+    margin-left: 762px;
+    position: absolute;
+}
+
+.QiQi_Arcade .niveaux3 {
+    margin-top:  545px;
+    margin-left: 831px;
+    position: absolute;
+}
+
+.QiQi_Electric .niveaux1 {
+    margin-top:  545px;
+    margin-left: 985px;
+    position: absolute;
+}
+
+.QiQi_Electric .niveaux2 {
+    margin-top:  545px;
+    margin-left: 1056px;
+    position: absolute;
+}
+
+.QiQi_Electric .niveaux3 {
+    margin-top:  545px;
+    margin-left: 1125px;
+    position: absolute;
+}
+
+.QiQi_Groovy .niveaux1{
+    margin-top:  844px;
+    margin-left: 250px;
+    position: absolute;
+}
+
+.QiQi_Groovy .niveaux2 {
+    margin-top:  844px;
+    margin-left: 321px;
+    position: absolute;
+}
+
+.QiQi_Groovy .niveaux3 {
+    margin-top:  844px;
+    margin-left: 390px;
+    position: absolute;
+}
+
+.QiQi_Hextech .niveaux1{
+    margin-top:  844px;
+    margin-left: 544px;
+    position: absolute;
+}
+
+.QiQi_Hextech .niveaux2 {
+    margin-top:  844px;
+    margin-left: 614px;
+    position: absolute;
+}
+
+.QiQi_Hextech .niveaux3 {
+    margin-top:  844px;
+    margin-left: 684px;
+    position: absolute;
+}
+
+.QiQi_Pulsefire .niveaux1 {
+    margin-top:  844px;
+    margin-left: 838px;
+    position: absolute;
+}
+
+.QiQi_Pulsefire .niveaux2 {
+    margin-top:  844px;
+    margin-left: 908px;
+    position: absolute;
+}
+
+.QiQi_Pulsefire .niveaux3 {
+    margin-top:  844px;
+    margin-left: 978px;
+    position: absolute;
+}
